@@ -1,0 +1,169 @@
+/* ---------- GLOBAL ---------- */
+.emp-container {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 20px 16px 40px;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background: #fafafa;
+}
+
+/* ---------- HEADER ---------- */
+.emp-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 10px;
+  margin-bottom: 24px;
+  background: lightcyan;
+}
+
+.emp-avatar {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, #6c63ff, #7f79ff);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emp-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+.emp-header p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #b12828;
+  font-weight: bold;
+}
+
+/* ---------- TODAY CARD ---------- */
+.emp-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px 18px;
+  box-shadow: 0 10px 30px rgb(174 92 92 / 24%);
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.emp-card h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.emp-date {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #777;
+}
+
+.emp-status {
+  margin: 18px 0 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.emp-status.marked {
+  color: #2e7d32;
+}
+
+.emp-status.not-marked {
+  color: #c62828;
+}
+
+/* ---------- BUTTONS ---------- */
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #6c63ff, #7f79ff);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.primary-btn:active {
+  transform: scale(0.98);
+}
+
+.primary-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ---------- SUMMARY ---------- */
+.emp-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.emp-summary div {
+  flex: 1;
+  text-align: center;
+}
+
+.emp-summary span {
+  display: block;
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+.emp-summary strong {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* ---------- SECONDARY ACTION ---------- */
+.secondary-btn {
+  width: 100%;
+  padding: 11px;
+  background: #ffffff;
+  border: 1.5px solid #6c63ff;
+  color: #6c63ff;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 14px;
+  cursor: pointer;
+}
+
+/* ---------- LOGOUT ---------- */
+.logout-btn {
+  width: 100%;
+  padding: 12px;
+  background: #f44336;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (min-width: 768px) {
+  .emp-container {
+    margin-top: 40px;
+  }
+}

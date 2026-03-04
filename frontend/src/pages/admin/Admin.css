@@ -1,0 +1,293 @@
+/* ================= RESET ================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f9;
+ 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1f2937;
+}
+
+/* ================= CONTAINER ================= */
+.admin-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ================= HEADER ================= */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 20px;
+
+  /* added colors */
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.admin-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e3a8a; /* deep blue */
+}
+
+.admin-header p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #475569;
+}
+
+/* ================= LOGOUT BUTTON ================= */
+.logout-btn.small {
+  padding: 8px 12px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+  height: fit-content;
+  width: 60px;
+  transition: background 0.2s ease;
+}
+.admin-create-btn {
+  padding: 6px 12px;
+  background-color: green;
+  height: fit-content;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 13;
+}
+
+.logout-btn.small:hover {
+  background: #dc2626;
+}
+
+/* ================= STATS ================= */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+
+  /* added polish */
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  background: #f8fafc;
+}
+
+.stat-card h3 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+  color: #4338ca; /* indigo */
+}
+
+.stat-card p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/* ================= PRESENT CARD ================= */
+.admin-card {
+  background: white;
+  border-radius: 12px;
+  padding:10px;
+  overflow: scroll;
+
+  /* added polish */
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* ================= PRESENT HEADER ================= */
+.present-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.present-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.present-header input {
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  
+}
+
+/* ================= TABLE ================= */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 10px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.admin-table th {
+  background: #eef2ff;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.admin-table tr:not(:last-child) td {
+  border-bottom: 1px solid #eee;
+}
+
+.admin-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* ================= PAGINATION ================= */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.pagination span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid #4338ca;
+  background: white;
+  color: #4338ca;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.pagination button:hover {
+  background: #eef2ff;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/* ================= MODAL ================= */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  width: 90%;
+  max-width: 360px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.modal h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: #1e3a8a;
+}
+
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-actions button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-actions button:first-child {
+  background: #2563eb;
+  color: white;
+}
+
+.modal-actions button:last-child {
+  background: #e5e7eb;
+}
+
+/* ================= MOBILE FIX ================= */
+@media (max-width: 600px) {
+  .admin-header {
+    gap: 10px;
+  }
+
+  .logout-btn.small {
+    align-self: flex-end;
+    margin-bottom: 10px;
+  }
+
+  .present-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .present-header input {
+    width: 100%;
+  }
+
+  .admin-table {
+    font-size: 13px;
+  }
+}

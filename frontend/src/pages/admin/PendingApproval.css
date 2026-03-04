@@ -1,0 +1,163 @@
+/* ================= PAGE ================= */
+.pending-container {
+  max-width: 880px;
+  margin: auto;
+  padding: 24px;
+  background: #f5f7fb;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ================= HEADER ================= */
+.pending-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.pending-header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.pending-header button {
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+  cursor: pointer;
+}
+
+/* ================= EMPTY ================= */
+.empty-text {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 15px;
+  color: #6b7280;
+}
+
+/* ================= CARD ================= */
+.approval-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 18px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* ================= INFO ================= */
+.approval-info h4 {
+  margin: 0;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: blue;
+}
+
+.approval-info .email {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #6b7280;
+  display: flex;
+  justify-content: center;
+}
+
+/* ================= META ================= */
+.meta {
+  display: flex;
+  gap: 18px;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #374151;
+  justify-content: space-between;
+}
+
+.meta span {
+  background: #f1f5f9;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* ================= ACTIONS ================= */
+.approval-actions {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ================= CHECKBOXES ================= */
+.approval-checkboxes {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.approval-checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  font-size: 13px;
+  color: #374151;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.approval-checkboxes input {
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+/* ================= APPROVE BUTTON ================= */
+.approve-btn {
+  padding: 9px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #16a34a;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.approve-btn:hover {
+  background: #15803d;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+  .pending-container {
+    padding: 16px;
+  }
+
+  .approval-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .approval-checkboxes {
+    justify-content: flex-start;
+  }
+
+  .approve-btn {
+    width: 100%;
+  }
+
+  .meta {
+    flex-direction: row;
+    gap: 6px;
+  }
+}
