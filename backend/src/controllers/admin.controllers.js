@@ -1,3 +1,4 @@
+import { hash } from "bcryptjs";
 import Attendance from "../models/Attendance.model.js";
 import User from "../models/User.model.js";
 
@@ -153,11 +154,12 @@ export const createAdmin = async (req, res) => {
     if (existingUser) {
       return res.status(400).json({ message: "Email already exists" });
     }
+    const hashpassword = await hash(password, 10);
 
     const admin = await User.create({
       name,
       email,
-      password,
+      password: hashpassword,
       role: "admin"
     });
 

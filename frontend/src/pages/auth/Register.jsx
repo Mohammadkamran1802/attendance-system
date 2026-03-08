@@ -15,7 +15,7 @@ const Register = () => {
   const [loading, setLoading] = useState(false);
 
   const handleRegister = async () => {
-    if (!name || !email || !password || !role) {
+    if (!name || !email || !password) {
       toast.error("All fields are required");
       return;
     }
