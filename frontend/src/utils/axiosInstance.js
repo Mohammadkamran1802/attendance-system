@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://attendance-system-8x89.onrender.com",
+  withCredentials: true
 });
 
 // attach token automatically
