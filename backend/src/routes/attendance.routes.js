@@ -10,8 +10,4 @@ router.post('/mark-present',authMiddleware, roleMiddleware('employee'), markPres
 router.get('/my-monthly',authMiddleware,roleMiddleware('employee'),getMonthlyAttendance);
 
 
-
-
-
-
 export default router;

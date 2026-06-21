@@ -77,6 +77,8 @@ const EmployeeDashboard = () => {
   };
 
   return (
+    
+    
     <div className="emp-container">
       {/* HEADER */}
       <div className="emp-header">
@@ -152,6 +154,8 @@ const EmployeeDashboard = () => {
       </button>
     </div>
   );
+ 
+ 
 };
 
 export default EmployeeDashboard;
