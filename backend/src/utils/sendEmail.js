@@ -43,7 +43,7 @@ const sendEmail = async ({ to, subject, text }) => {
         tls: { rejectUnauthorized: false },
       });
 
-      await transporter.verify();
+      // await transporter.verify();
       console.log("SMTP transporter verified (587)");
     }
 
